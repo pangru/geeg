@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+.sc_h_nav_0022 {display:inline-block; zoom:1; *display:inline; vertical-align:top;}
+.sc_h_nav_0022 ul {list-style:none; margin:0; padding:0; position:relative; display:block;}
+.sc_h_nav_0022 li {display:inline-block; zoom:1; *display:inline; cursor:pointer; width:auto;}
+.sc_h_nav_0022 a {display:block; width:auto; line-height:normal;}
+.sc_h_nav_0022 img {vertical-align:middle;}
+.sc_h_nav_0022 ul div {position:absolute; z-index:10; left:0;}
+.sc_h_nav_0022 ul ul {white-space:nowrap; display:inline-block; zoom:1; *display:inline; padding:0;}
+.sc_h_nav_0022 li li {display:inline; float:none;}
+.sc_h_nav_0022 li li a {display:inline-block; zoom:1; *display:inline;}
+
+.sch_navi__ li.active > .depl_text {padding: 3px 0 0 0; color: #DB214C;}

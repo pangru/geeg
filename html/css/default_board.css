@@ -1,0 +1,324 @@
+@charset "utf-8";
+
+/* tag init */
+.sc_bd {font-size: 12px; min-width:200px; font-family: Dotum, Helvetica, Arial, Sans-Serif;}
+.sc_bd img {border: 0;}
+.sc_bd table {border-collapse: collapse;}
+.sc_bd fieldset {border: 0;}
+.sc_bd input {vertical-align: middle;}
+.sc_bd a {text-decoration: none;}
+.sc_bd label {vertical-align:middle;}
+.sc_bd select {vertical-align:middle;}
+.sc_bd fieldset, .sc_bd form, .sc_bd legend {margin:0; padding:0;}
+
+.sc_bd .bbtn {cursor: pointer;}
+.sc_bd .blind {overflow:hidden; width:0; height:0; font-size:0; line-height:0; visibility:hidden;}
+.sc_bd .clear {clear: both;}
+.sc_bd .center {text-align: center;}
+.sc_bd .nowrap {white-space: nowrap;}
+
+
+/* Attribute */
+.sc_bd .first_subject {font-weight:normal; font-size:11px; color:#888;}
+
+
+/* Main line */
+.sc_bd .bline {height: 5px; overflow: hidden; margin:0 0 1px 0;}
+
+
+/* SNS Button */
+.sc_bd .snsbtn {text-align:right; padding:0; margin-bottom:5px;}
+.sc_bd .snsbtn a {position:relative; width:16px; height:16px; overflow:hidden; display:inline-block; *zoom:1; *display:inline;}
+.sc_bd .snsbtn a span {position:absolute; left:0; top:0; width:100%; height:100%;}
+
+
+/* Text input */
+.sc_bd .ipt_text {
+	padding: 3px 4px; line-height: 17px; vertical-align: middle; border-width: 1px; _height: 24px;
+}
+.sc_bd .ipt_sml_text {padding:2px 3px; line-height:15px; vertical-align:middle; border-width:1px; font-size:11px; _height: 20px; margin:0;}
+.sc_bd .ipt_chk {border: 0; height: 18px; margin:0 3px;}
+
+
+/* icon sprite */
+.sc_bd .ico {background-image:url('/img_up/shop_pds/ujubyul/board_tpl/73/ico_icons1.png'); background-repeat:no-repeat;}
+.sc_bd .ico_twitter .ico {background-position:-3px -3px;}
+.sc_bd .ico_me2day .ico {background-position:-22px -3px;}
+.sc_bd .ico_cyworld .ico {background-position:-41px -3px;}
+.sc_bd .ico_facebook .ico {background-position:-60px -3px;}
+.sc_bd .ico_mypage .ico {background-position:-79px -3px;}
+
+
+/* QNA BOX */
+.sc_bd .qnaBox {margin:8px 0 15px; padding:.8em; border-width:1px; border-style:dashed; border-radius:5px;}
+.sc_bd .qnaBox h3 {margin:0; padding:.3em 0 .5em;}
+.sc_bd .qnaBox.question {border-color:#aaa;}
+.sc_bd .qnaBox.question h3 {color:#3e7cd9;}
+.sc_bd .qnaBox.answer {border-color:#e77c10;}
+.sc_bd .qnaBox.answer h3 {color:#f45225;}
+
+
+/* Layout */
+.sc_bd {text-align: center;}
+.sc_bd .bd_body {text-align: left; margin: 0;}
+
+
+/* Category & Board List */
+.catelist_box ul {margin:0; padding:0;}
+.sc_bd .lay_list_general .list_box {margin:0 0 10px 0; border-width: 1px; border-radius: 3px; padding: 15px 10px 10px;}
+.sc_bd .lay_list_general .list_box h2 {
+	font-size: 12px; padding: 0 0 0 11px; margin:0;
+	background-position: 3px 50%; background-repeat: no-repeat;
+}
+.sc_bd .lay_list_general .list_box .list {list-style: none; display: inline-block; *zoom:1; *display:inline; margin: 2px 7px 0;}
+.sc_bd .lay_list_general .list_box .list li {
+	float: left; margin: 0 9px 0 0; padding: 0;
+	background-repeat: no-repeat; background-position: right 5px;
+}
+.sc_bd .lay_list_general .list_box .list li a {
+	display: inline-block; height:18px; padding: 5px 15px 0 5px; text-decoration: none; line-height: 12px; white-space: nowrap; overflow:hidden;
+	*display:inline; *line-height:18px;
+}
+.sc_bd .lay_list_general .list_box .nodata {padding: 10px;}
+
+.sc_bd .lay_list_selectbox {text-align: right;}
+.sc_bd .lay_list_selectbox span {margin-left: 10px; line-height: 12px;}
+.sc_bd .lay_list_selectbox select {margin: 3px 0; border-width:1px; padding: 1px; vertical-align: middle;}
+
+
+/* List(board&tab) */
+.sc_bd .listbd {margin: 5px 0 0 0; border: 0; border-bottom-width: 2px; border-style: solid;}
+.sc_bd .listbd .table {width: 100%;}
+.sc_bd .listbd .table thead th {
+	padding: 12px 4px; line-height: 12px; white-space: nowrap; font-size: 12px; text-align:center;
+	background-position: left 50%; background-repeat: no-repeat;
+}
+.sc_bd .listbd .table thead th.first {background-image: none !important;}
+.sc_bd .listbd .table tbody {vertical-align: middle;}
+.sc_bd .listbd .table tbody td {text-align: center; padding: 0 4px; white-space:nowrap; border-width: 1px 0 0 0; font-size: 12px;}
+.sc_bd .listbd .table tbody td.subject {text-align: left; white-space: normal; word-break: break-all; line-height: 16px; padding:9px 5px;}
+.sc_bd .listbd .table tbody td.subject a {display:inline-block; *zoom:1; *display:inline;}
+.sc_bd .listbd .table tbody td.subject img {vertical-align: middle;}
+.sc_bd .listbd .table tbody td.nodoc {padding: 40px 0;}
+.sc_bd .listbd .table tbody td.noline {padding:0;}
+.sc_bd .listbd .table tbody td.listcon {padding:0; border:none !important; white-space: normal; text-align:left;}
+.sc_bd .listbd .table tbody .divcon {border-width:1px 0 0 0; padding:15px 0;}
+.sc_bd .listbd .table tbody .divcon .btn_grp {margin-top:15px; text-align:right; padding:8px 12px;}
+.sc_bd .listbd .table tbody .divcon .conbody {padding:0 10px 0 10px;}
+.sc_bd .listbd .table tbody .divcon .conbody .concon {width:100%; overflow:hidden;}
+
+.sc_bd .listbd .notice_table {border-width:0;}
+.sc_bd .listbd .notice_table td {border-width:0 !important;}
+
+
+/* List(Gallery) */
+.sc_bd .list_gal .ge_table .table {width:100%; border-width:0 0 2px 0;}
+.sc_bd .list_gal .ge_table .table .td_blk {vertical-align:top; text-align:center; padding:20px 0 20px; letter-spacing:-1px;}
+.sc_bd .list_gal .ge_table .table .td_blk p {margin:0;}
+.sc_bd .list_gal .ge_table .table .td_blk .thum img {display:inline-block; *zoom:1; *display:inline; margin:0 auto;}
+.sc_bd .list_gal .ge_table .table .td_blk .thum .noimg {
+	display:table; margin:0 auto; border-width:1px; border-style:solid;
+}
+.sc_bd .list_gal .ge_table .table .td_blk .thum .noimg span {
+	display:table-cell; vertical-align:middle; font-weight:bold; font-family:Arial; letter-spacing:0;
+}
+
+.sc_bd .list_gal .ge_table .table .td_blk .tdinfo {margin-top:6px;}
+.sc_bd .list_gal .ge_table .table .td_blk .title_grp {}
+.sc_bd .list_gal .ge_table .table .td_blk .nam {margin-top:5px;}
+.sc_bd .list_gal .ge_table .table .td_blk .regdate {font-family:Tahoma; font-size:11px; letter-spacing:0; margin-top:1px;}
+.sc_bd .list_gal .ge_table .table .td_blk .etcc {margin-top:3px; font-size:11px;}
+.sc_bd .list_gal .ge_table .table .td_blk .etcc span {margin:0 2px;}
+.sc_bd .list_gal .ge_table .table .td_blk .sbj {font-size:12px;}
+
+
+/* List(Calendar) */
+.sc_bd .list_cal {}
+.sc_bd .list_cal .cal_nav {text-align:center; margin:1px 0; padding:10px 0; border-width:0 0 1px 0;}
+.sc_bd .list_cal .cal_nav .current_text {margin:0 10px 0 10px; font-weight:bold;}
+.sc_bd .list_cal .ge_table {width: 100%;}
+.sc_bd .list_cal .ge_table td {border-width:0 1px 1px;}
+.sc_bd .list_cal .ge_table .num {font-size:14px; margin:0 0 8px 0;}
+.sc_bd .list_cal .ge_table .td_normal {word-break:break-all; vertical-align:top; font-size:12px; line-height:12px; padding:8px 5px;}
+.sc_bd .list_cal .ge_table .td_normal .subject {font-weight:bold; letter-spacing:-1px;}
+.sc_bd .list_cal .ge_table .td_normal .block {list-style:none; margin:0; padding:0;}
+.sc_bd .list_cal .ge_table .td_normal .block li {margin-bottom:5px;}
+.sc_bd .list_cal .ge_table .td_normal .block .name {margin-right:.2em;}
+.sc_bd .list_cal .ge_table .td_normal .block>li {width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.sc_bd .list_cal .ge_table .sun {}
+.sc_bd .list_cal .ge_table .sun>.num {color:red;}
+
+.sc_bd .list_cal .ge_table .sat>.num {color:blue;}
+
+
+/* List(Webzine) */
+.sc_bd .list_web .ge_list {list-style:none; margin:0; padding:0;}
+.sc_bd .list_web .ge_list li {padding:0 0 40px; border-width:0 0 1px 0;}
+.sc_bd .list_web .ge_list li .doc_info {display:inline-block; *zoom:1; *display:inline; width:100%; border-width:0 0 1px 0; padding:10px 0; margin:0;}
+.sc_bd .list_web .ge_list li .doc_info dt {float:left; margin:0 10px 0 0; padding-left:10px; border-width:0 0 0 1px;}
+.sc_bd .list_web .ge_list li .doc_info dt.first {border-width:0;}
+.sc_bd .list_web .ge_list li .doc_info dd {float:right; margin:0 8px; font-size: 11px;}
+.sc_bd .list_web .ge_list li .doc_con {display:inline-block; *zoom:1; *display:inline; width:100%; margin:10px 0 0 0;}
+.sc_bd .list_web .ge_list li .doc_con dt {float:left; padding:0 8px 0 10px;}
+.sc_bd .list_web .ge_list li .doc_con dt img {}
+.sc_bd .list_web .ge_list li .doc_con dd {padding:5px 10px 0 8px; margin:0;}
+
+
+/* List - Blog */
+.sc_bd .list_blog .ge_block {border-width:1px; margin: 20px 0 30px; padding:15px;}
+.sc_bd .list_blog .ge_block .subject {font-weight:bold;}
+.sc_bd .list_blog .ge_block .doc_info1 {width:100%; display:inline-block; *zoom:1; *display:inline; border-width:0 0 1px 0; margin:0 0 10px 0; padding:0 0 8px 0;}
+.sc_bd .list_blog .ge_block dt {float:left; margin-right:3px;}
+.sc_bd .list_blog .ge_block dd {float:right; margin-right:3px;}
+.sc_bd .list_blog .ge_block .doc_info2 {width:100%; display:inline-block; *zoom:1; *display:inline; margin:0;}
+.sc_bd .list_blog .ge_block .doc_info2 dd {margin:0;}
+.sc_bd .list_blog .ge_block .conbody {margin-top:20px;}
+.sc_bd .list_blog .ge_block .conbody img {min-width:300px;}
+.sc_bd .list_blog .ge_block .fbtn {width:100%; margin:20px 0 6px 0; padding:10px 0 0 0; display:inline-block; *zoom:1; *display:inline; border-width:1px 0 0 0;}
+.sc_bd .list_blog .ge_block .fbtn dt a {margin-right:5px;}
+.sc_bd .list_blog .ge_block .fbtn dd {margin:0;}
+.sc_bd .list_blog .ge_block .fbtn dd a {margin-left:5px;}
+.sc_bd .list_blog .ge_block .attachFiles {text-align:right; margin-top:8px; padding:3px 0; border-width:1px 0 0 0;}
+.sc_bd .list_blog .ge_block .attachFiles p {margin:3px 0;}
+
+
+/* List (Notice) */
+.sc_bd .notice_table {border-width:1px 0; width:100%; margin-top:1px;}
+.sc_bd .notice_table .table {width:100%;}
+.sc_bd .notice_table .table td {padding:8px; text-align:center;}
+.sc_bd .notice_table .table td.subject {text-align:left;}
+
+
+/* List (Button&Search) */
+.sc_bd .btngroup {border-width: 1px 0 0 0; border-style: solid; padding: 8px 0 0 0; margin:0; height: 35px;}
+.sc_bd .btngroup dt {float: left; text-align: left; width: 230px; padding-left: 5px; display: inline-block; *zoom:1; *display:inline;}
+.sc_bd .btngroup dt label {font-weight:bold; line-height:12px; vertical-align:middle;}
+.sc_bd .btngroup dd {float: right; display: inline-block; *zoom:1; *display:inline; padding-right: 5px;}
+
+
+/* No Document */
+.sc_bd .nodoc {padding:50px 0 !important; text-align:center; font-weight:bold;}
+
+
+/* Pagenate */
+.sc_bd .paginate {padding:15px 0; text-align:center; line-height:normal;}
+.sc_bd .paginate a,
+.sc_bd .paginate strong{
+	display:inline-block; *zoom:1; *display:inline; position:relative; margin:0 -2px; padding:6px 10px;
+	font-weight:bold; font-size:12px; font-family:Tahoma, Sans-serif; line-height:normal; text-decoration:none; vertical-align:middle;
+}
+.sc_bd .paginate .direction {font-weight:normal; white-space:nowrap; display:inline-block; *zoom:1; *display:inline;}
+.sc_bd .paginate .direction span{font-weight:bold; font-size:14px; font-family:Tahoma;}
+
+
+/* Editor */
+.sc_bd .editor {}
+
+
+/* Detail */
+.sc_bd .detaill .boxx {margin: 1px 0 0; border-width: 2px 1px 1px;}
+.sc_bd .detaill .info_head {height: 30px; margin: 0 0 0 0; border-width: 0 0 1px 0;}
+.sc_bd .detaill .info_head dt {float: left; margin: 8px 0 0 10px;}
+.sc_bd .detaill .info_head dt .btitle {
+	padding: 0 10px 0 0; margin-right: 5px;
+	background-position: right 50%; background-repeat: no-repeat;
+}
+.sc_bd .detaill .info_head dd {float: right; margin: 7px 10px 0 10px; font-family: Tahoma; font-size: 11px;}
+.sc_bd .detaill .info_sub {height: 30px; margin: 0; border-bottom: 1px solid #ddd;}
+.sc_bd .detaill .info_sub dt {float: left; margin: 9px 0 0 10px;}
+.sc_bd .detaill .info_sub dt,
+.sc_bd .detaill .info_sub dt a {color: #888;}
+.sc_bd .detaill .info_sub dt .hit {margin-left: 4px; padding-left: 7px; border-left: 1px solid #aaa;}
+.sc_bd .detaill .info_sub dd {float:right; margin: 9px 10px 0 0; color: #666;}
+.sc_bd .detaill .add_bgm {text-align: right; padding: 8px 10px 3px; color: #666;}
+.sc_bd .detaill .add_bgm p {margin:2px 0;}
+.sc_bd .detaill .add_bgm .bgmm {margin-top:5px; vertical-align:middle;}
+.sc_bd .detaill .add_bgm .bgmm marquee {height:12px; line-height:12px;}
+.sc_bd .detaill .urlAddress {text-align:right;}
+.sc_bd .detaill .urlAddress a {font-size:11px; font-family:Arial; vertical-align:bottom;}
+.sc_bd .detaill .urlAddress a:hover {text-decoration:underline;}
+.sc_bd .detaill .urlAddress a.btn {
+	display:inline-block; *zoom:1; *display:inline; width:56px; height:15px; text-indent:-9999px !important;
+	background-position:0 0; background-repeat:no-repeat;
+}
+.sc_bd .detaill .conbody {padding:5px 0 20px;}
+.sc_bd .detaill .conbody .ccbody {}
+.sc_bd .detaill .conbody .ccbody img,
+.sc_bd .detaill .conbody .ccbody iframe {max-width:100%;}
+
+.sc_bd .detaill .votebox {padding:10px 0;}
+.sc_bd .detaill .mid_design {padding:10px 0;}
+.sc_bd .detaill .com_tit {
+	margin-top:10px; padding:8px 0 8px 23px;
+	background-position:5px 50%; background-repeat:no-repeat;
+}
+.sc_bd .detaill .def_doc {border-width:1px 0; border-style:solid; padding:8px 0 8px 12px; margin-top:20px;}
+.sc_bd .detaill .def_doc p {margin:0;}
+.sc_bd .detaill .btn_grpp {text-align: center; padding: 25px 0;}
+.sc_bd .detaill .conpad {padding:10px 10px 0;}
+
+
+/* Comment */
+.sc_bd .comm_cnt {}
+.sc_bd.co_cmt_body {padding:10px 15px 15px 15px; border-width:1px;}
+.sc_bd .comm_list {list-style-type:none; text-align:left; margin:0; padding:0;}
+.sc_bd .comm_list li {padding:10px 0; border-width:0 0 1px 0;}
+.sc_bd .comm_list .cname {margin:0 0 5px 0;}
+.sc_bd .comm_list .ico_reply {vertical-align:middle;}
+.sc_bd .comm_list .cn_name {font-weight:bold; vertical-align:middle;}
+.sc_bd .comm_list .cn_date {font-family: Tahoma; font-size:11px; vertical-align:middle;}
+.sc_bd .comm_list .cbody {word-break:break-all; line-height:16px;}
+.sc_bd .comm_list .btn_grp {text-align:right; margin-top:10px;}
+.sc_bd .comm_list .btn_grp .pwform {margin:0 0px 0 15px;}
+.sc_bd .comm_list .btn_grp .pwform label {font-size:11px;}
+.sc_bd .comm_write {text-align:left; padding:15px 0 0 0;}
+.sc_bd .comm_write .inf {margin-bottom:5px;}
+.sc_bd .comm_write .inf label {vertical-align:middle;}
+.sc_bd .comm_write .inf input {margin-right:10px;}
+.sc_bd .comm_write .txtbox {
+	width:100%; height:60px;
+	box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+.sc_bd .comm_write .submit {text-align:center; margin-top:8px;}
+
+
+/* Comment modify */
+.sc_bd.scpop .comment_modify {}
+
+
+
+/* Form */
+.sc_bd .formm {}
+.sc_bd .formm .frm_head {
+	border-width: 1px 0; padding: 10px 0 10px 20px;
+	background-position: 10px 50%; background-repeat: no-repeat;
+}
+.sc_bd .formm .table {width: 100%;}
+.sc_bd .formm .table tbody th,
+.sc_bd .formm .table tbody .td {padding: 2px 3px; height: 32px; border-width: 0 0 1px 0; vertical-align: middle;}
+.sc_bd .formm .table tbody th {padding-left: 15px; text-align: left; font-size:12px;}
+.sc_bd .formm .table tbody .td {padding-left: 10px; line-height: 20px;}
+.sc_bd .formm .table tbody .td p {}
+.sc_bd .formm .table tbody .td label {vertical-align: middle;}
+.sc_bd .formm .table tbody .td label img {vertical-align: middle;}
+.sc_bd .formm .table tbody .write_reg label {margin: 0 5px 0 2px;}
+.sc_bd .formm .td_editor {padding:7px 5px !important;}
+.sc_bd .formm .td_editor .head {margin:0 0 5px 0;}
+.sc_bd .formm .td_editor .editor {border: 1px solid #acacac; margin-top:5px;}
+.sc_bd .formm .td_editor .efiles {display:inline-block; *zoom:1; *display:inline; margin:7px 0 0 0;}
+.sc_bd .formm .td_editor .efiles dt {float:left;}
+.sc_bd .formm .td_editor .efiles dt select {border-width:1px; height:56px;}
+.sc_bd .formm .td_editor .efiles dd {float:left; margin-left:10px;}
+.sc_bd .formm .td_editor .efiles dd .scbtn {margin-bottom:8px;}
+.sc_bd .formm .td_editor .efiles dd input {}
+.sc_bd .formm .td_editor .efiles dd span {font-family:Tahoma;}
+.sc_bd .formm .table tfoot td {text-align: center; padding: 10px;}
+.sc_bd .formm .table tfoot td a {margin: 0 3px;}
+.sc_bd .formm .snsgrp {}
+.sc_bd .formm .snsgrp label {position:relative; display:inline-block; *zoom:1; *display:inline; overflow:hidden; width:16px; height:16px;}
+.sc_bd .formm .snsgrp label span {position:absolute; display:block; width:100%; height:100%; left:0; top:0;}
+
+
+/* attached files */
+.attachFile {text-align:right; margin-bottom:1em;}
+.attachFile p {margin:.2em 0;}
+.attachFile a {color:#666;}

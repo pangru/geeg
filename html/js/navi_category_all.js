@@ -1,0 +1,81 @@
+var navi_cate_00000000_code = new Array ("01000000","02000000","03000000","04000000","05000000","06000000")
+var navi_cate_00000000_menu_subject = new Array ("사업단 소개","젓갈 이야기","강경젓갈 장터","강경젓갈 여지도","사업소개 마당", "참여마당")
+var navi_cate_00000000_link_url = new Array ("#","#","#","#","#","#")
+var navi_cate_00000000_link_target = new Array ("","","","","","")
+var navi_cate_00000000_link_onclick = new Array ("showGoalHtml()","showCharHtml()","showMarketContactHtml()","showMarketMaptHtml()","showNoticeHtml()","showBoardHtml()")
+var navi_cate_00000000_bt1 = new Array ("","","","","","")
+var navi_cate_00000000_bt2 = new Array ("","","","","","")
+
+var navi_cate_01000000_code = new Array ("01010000","01020000","01030000")
+var navi_cate_01000000_menu_subject = new Array ("사업목적","사업핵심방향", "사업단 조직")
+var navi_cate_01000000_link_url = new Array ("#","#","#")
+var navi_cate_01000000_link_target = new Array ("","","")
+var navi_cate_01000000_link_onclick = new Array ("showGoalHtml()","showCoreHtml()","showOrgHtml()")
+var navi_cate_01000000_bt1 = new Array ("","","")
+var navi_cate_01000000_bt2 = new Array ("","","")
+
+var navi_cate_02000000_code = new Array ("02010000","02020000","02030000")
+var navi_cate_02000000_menu_subject = new Array ("강경젓갈특징","젓갈의 효능","젓갈의 종류")
+var navi_cate_02000000_link_url = new Array ("#","#","#")
+var navi_cate_02000000_link_target = new Array ("","","")
+var navi_cate_02000000_link_onclick = new Array ("showCharHtml()","showEffectHtml()","showTypeHtml()")
+var navi_cate_02000000_bt1 = new Array ("","","")
+var navi_cate_02000000_bt2 = new Array ("","","")
+
+var navi_cate_03000000_code = new Array ("03010000")
+var navi_cate_03000000_menu_subject = new Array ("젓갈 구매")
+var navi_cate_03000000_link_url = new Array ("#")
+var navi_cate_03000000_link_target = new Array ("")
+var navi_cate_03000000_link_onclick = new Array ("showMarketContactHtml()")
+var navi_cate_03000000_bt1 = new Array ("")
+var navi_cate_03000000_bt2 = new Array ("")
+
+var navi_cate_04000000_code = new Array ("04010000","04020000","04030000","04040000")
+var navi_cate_04000000_menu_subject = new Array ("젓갈시장 관광","추천코스 관광","숙박시설정보","모범음식점정보")
+var navi_cate_04000000_link_url = new Array ("#","#","#","#")
+var navi_cate_04000000_link_target = new Array ("","","","")
+var navi_cate_04000000_link_onclick = new Array ("showMarketMaptHtml()","showRecommMaptHtml()","showHotelMaptHtml()","showRestMaptHtml()")
+var navi_cate_04000000_bt1 = new Array ("","","","")
+var navi_cate_04000000_bt2 = new Array ("","","","")
+
+var navi_cate_05000000_code = new Array ("05010000","05020000","05030000","05040000")
+var navi_cate_05000000_menu_subject = new Array ("공지사항","행사일정","포토앨범","영상앨범")
+var navi_cate_05000000_link_url = new Array ("#","#","#","#")
+var navi_cate_05000000_link_target = new Array ("","","","")
+var navi_cate_05000000_link_onclick = new Array ("showNoticeHtml()","showCalenderHtml()","showPhotoHtml()","showVideoHtml()")
+var navi_cate_05000000_bt1 = new Array ("","","","")
+var navi_cate_05000000_bt2 = new Array ("","","","")
+
+var navi_cate_06000000_code = new Array ("06010000","06020000","06030000")
+var navi_cate_06000000_menu_subject = new Array ("게시판","SNS마당","젓갈요리마당")
+var navi_cate_06000000_link_url = new Array ("#","#","#")
+var navi_cate_06000000_link_target = new Array ("","","")
+var navi_cate_06000000_link_onclick = new Array ("showBoardHtml()","showSNSHtml()","showFoodHtml()")
+var navi_cate_06000000_bt1 = new Array ("","","")
+var navi_cate_06000000_bt2 = new Array ("","","")
+
+var navi_path_arr = new Array();
+navi_path_arr['01000000'] = '사업단 소개';
+navi_path_arr['01010000'] = '사업단 소개&gt;사업목적';
+navi_path_arr['01020000'] = '사업단 소개&gt;사업핵심방향';
+navi_path_arr['01020000'] = '사업단 소개&gt;사업단 조직';
+navi_path_arr['02000000'] = '젓갈 이야기'; 
+navi_path_arr['02010000'] = '젓갈 이야기&gt;강경 젓갈 특징'; 
+navi_path_arr['02020000'] = '젓갈 이야기&gt;젓갈의 효능'; 
+navi_path_arr['02030000'] = '젓갈 이야기&gt;젓갈의 종류'; 
+navi_path_arr['03000000'] = '강경젓갈 장터'; 
+navi_path_arr['03010000'] = '강경젓갈 장터&gt;젓갈 구매'; 
+navi_path_arr['04000000'] = '강경젓갈 여지도'; 
+navi_path_arr['04010000'] = '강경젓갈 여지도&gt;젓갈시장 관광'; 
+navi_path_arr['04020000'] = '강경젓갈 여지도&gt;추천코스 관광'; 
+navi_path_arr['04030000'] = '강경젓갈 여지도&gt;숙박시설정보'; 
+navi_path_arr['04040000'] = '강경젓갈 여지도&gt;모범음식점정보'; 
+navi_path_arr['05000000'] = '사업소개 마당'; 
+navi_path_arr['05010000'] = '사업소개 마당&gt;공지사항'; 
+navi_path_arr['05020000'] = '사업소개 마당&gt;행사일정'; 
+navi_path_arr['05030000'] = '사업소개 마당&gt;포토앨범'; 
+navi_path_arr['05040000'] = '사업소개 마당&gt;영상앨범'; 
+navi_path_arr['06000000'] = '참여마당'; 
+navi_path_arr['06010000'] = '참여마당&gt;게시판'; 
+navi_path_arr['06020000'] = '참여마당&gt;SNS마당'; 
+navi_path_arr['06030000'] = '참여마당&gt;젓갈요리마당'; 

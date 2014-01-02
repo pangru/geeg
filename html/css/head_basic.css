@@ -1,0 +1,37 @@
+/* 일반 입력 박스*/
+.input_a { background-color:#FFFFFF; color:#000000; border:1px solid #C4CAD1; font-family:"돋움","굴림","verdana","arial"; font-size:9pt; padding: 2 0 0 3 }
+.select_a { background-color:#FFFFFF; color:#333333; border:1px solid #CCCCCC; font-size:9pt;}
+.textarea_a	{ background-color:#FFFFFF; color:#000000; border-width:1px; border-color:#C4CAD1;border-style:solid font-family:"돋움","굴림","verdana","arial"; font-size:9pt; overflow: auto }
+
+/* 일반 입력 박스 (검은색 계통) */
+.input_b { background-color:#3D3D3D; color:#DADADA; border:1px solid #7E7E7E; font-family:"돋움","굴림","verdana","arial"; font-size:9pt; padding: 2 0 0 3 }
+.select_b { background-color:#3D3D3D; color:#DADADA; border:1px solid #7E7E7E; font-size:9pt;}
+.textarea_b	{ background-color:#3D3D3D; color:#DADADA; border-width:1px; border-color:#7E7E7E;border-style:solid font-family:"돋움","굴림","verdana","arial"; font-size:9pt; overflow: auto }
+
+
+/* 일반 페이지 표시*/
+.sp_block_on { background-color: ;border:1px solid #A1A1A1;font-weight:bold;}
+.sp_block_off { background-color: ;border:0px;font-weight:bold;}
+
+/* 이전, 다음 버튼 */
+.sp_block2_on { background-color: ;border:1px solid #A1A1A1;}
+.sp_block2_off { background-color: ;border:0px;}
+
+/* 현재 페이지 표시 */
+.sp_block_now { background-color: ;border:1px solid #ACACAC;}
+.sp_block_now_font { font-weight:bold; color: #ACACAC;}
+
+
+.ui-pagenate a,
+.ui-pagenate strong {
+display:inline-block; *zoom:1; *display:inline;
+font-size:12px; height:24px; line-height:24px; padding:0 9px; vertical-align:middle; margin:0 2px;
+}
+.ui-pagenate a {border:1px solid #ccc; text-decoration:none; color:#555;}
+.ui-pagenate a:hover {text-decoration:none;}
+.ui-pagenate a.txt {font-weight:800; font-size:11px; font-family:Tahoma, Sans-Serif; letter-spacing:-3px;}
+.ui-pagenate strong {color:#111; font-size:14px;}
+
+body {margin:0; padding:0}
+
+/* UTF-8 한글체크 */

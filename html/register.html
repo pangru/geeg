@@ -1,0 +1,180 @@
+<style type="text/css">
+.cell { display: table-cell; vertical-align: middle; float: none !important;}
+.table { display: table; width: 100%; margin: 0}
+
+.fancybox-wrap,.fancybox-skin,.fancybox-outer,.fancybox-inner,.fancybox-image { padding: 0; margin: 0; border: 0; outline: none; vertical-align: top; }
+
+/*.fancybox-overlay { overflow: auto !important; background: url('images/ui-bg_40x40.png'); z-index: 8010; top: 0; left: 0;}*/
+.fancybox-overlay { overflow: auto !important; background: url('images/fancybox_overlay.png'); z-index: 8010; top: 0; left: 0;}
+.fancybox-overlay-fixed { position: fixed; bottom: 0; right: 0;}
+
+.fancybox-overlay.noopacity {
+  opacity: 0 !important;
+}
+.fancybox-overlay {
+  overflow: auto !important;
+}
+.fancybox-wrap {
+  border-radius: 5px !important;
+  box-shadow: 0 0 0 1px #000, 0 1px 0 1px #727272, 0 1px 0 4px #353535, 0 0px 0 4px #727272, 0px 0px 0 5px #000, 0px 1px 0 5px #000, 0 0 5px 6px #333;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  overflow: hidden !important;
+  border: 0;
+}
+.fancybox-wrap .fancybox-skin {
+  border-radius: 7px;
+  background: #fff;
+  border: 0;
+}
+.fancybox-wrap .fancybox-skin .fancybox-inner > h1:first-child {
+  background: #d5d9de ;
+  font-size: 16px;
+  padding: 10px 35px 10px 15px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #BEBEBE;
+  box-shadow: 0 1px #EDEDE7;
+  border-radius: 5px 5px 0 0;
+  margin: 0px;
+  line-height: 1.2;
+}
+.fancybox-wrap .fancybox-skin .fancybox-outer .fancybox-inner {
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden !important;
+}
+.fancybox-wrap .fancybox-skin .fancybox-close {
+  background: url("images/sprites_v2.png") -60px -80px;
+  height: 20px;
+  width: 20px;
+  right: 10px;
+  top: 10px;
+/*  opacity: .8;*/
+}
+.fancybox-wrap .fancybox-skin .fancybox-close:hover {
+  opacity: 1;
+}
+.fancybox-wrap .fancybox-skin.fancybox-overflow .fancybox-outer .fancybox-inner {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+.fancybox-wrap .fancybox-skin.fancybox-overflow .fancybox-outer .fancybox-inner > div {
+  padding-right: 15px;
+}
+.fancybox-wrap .fancybox-skin.fancybox-overflow .fancybox-close {
+  right: 20px;
+}
+.fancybox-outer, .fancybox-inner {position: relative;}
+.fancybox-opened { z-index: .8030;}
+.fancybox-opened .fancybox-skin {
+  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+div.fancybox-skin { color: #444; text-shadow: none;}
+#popup-inner { border-radius: 4px;}
+#popup-inner h3 { font-size: 14px; font-weight: bold; margin: 0; line-height: 40px;}
+#popup-inner.with-facebook {width: 710px; background-color: #fff;}
+#popup-inner #login-box-header {background: url('images/noise.png'), linear-gradient(#ffffff, #dddddd);border-radius: 4px 4px 0px 0px; padding: 5px; border-bottom: 1px solid #CCC; color: #353535; text-shadow: 0 1px 0 #fff; text-align: center;}
+
+#popup-inner #login-fb-wrapper { width: 280px; float: left; text-align: left; border-right: 1px solid #dddddd; padding: 15px 15px 10px 0;}
+
+#popup-inner #login-form-wrapper {width: 330px; padding-right: 15px; margin: 15px 10px 0 10px;}
+
+#login-box-container #login-form-wrapper { padding: 0 0px 0px 15px;}
+.fancybox-close { position: absolute; top: -18px; right: -18px; width: 36px; height: 36px; cursor: pointer; z-index: 8040;}
+
+.manage-fields-wrapper {padding: 0 0px 10px 0px; width: 100%; position: relative;z-index: 1}
+.manage-fields-wrapper > div.non-labeled { margin-top: 5px;}
+
+.manage-fields-wrapper input[type="password"], .manage-fields-wrapper input[type="text"] {border-radius: 3px; border: 1px solid #a9a9a9; width: 290px; height: 25px; padding-left: 5px;}
+
+.manage-fields-wrapper input:focus {box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);}
+.manage-fields-wrapper input {width: 290px; height: 30px;}
+
+.btn {border-radius: 4px; font-size: 14px; padding: 4px 12px; line-height: 20px}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .btn-success.disabled, .btn-success[disabled] {color: #ffffff; background-color: #CA8CC3;}
+.btn:focus {outline-offset: -2px;}
+
+.btn-success { 
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+  background-color: #D393C1;
+  background-image: -moz-linear-gradient(top,#a5be71,#D393C1);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#ECB0E5),to(#CA8CC3));
+  background-image: -webkit-linear-gradient(top,#ECB0E5,#CA8CC3);
+  background-image: -o-linear-gradient(top,#a5be71,#D393C1);
+  background-image: linear-gradient(to bottom,#ECB0E5,#CA8CC3);
+  background-repeat: repeat-x;
+  border-color: #CA8CC3 #CA8CC3 #D393C1;
+  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+}
+
+btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .btn-success.disabled, .btn-success[disabled] { color: #ffffff; background-color: #A35D9B; }
+
+</style>
+
+<script type="text/javascript">
+	window.fbAsyncInit();
+</script>
+
+<div class="fancybox-overlay fancybox-overlay-fixed" style="width: auto; height: auto; display: block">
+<div class="fancybox-wrap fancybox-opened" style="width: 710px; height: auto; position: absolute; top: 30%; left: 25%;">
+<div class="fancybox-skin" style="padding: 0px; width: auto; height: auto;">
+<div class="fancybox-outer">
+<div class="fancybox-inner" style="overflow: auto; width: 710px; height: auto;">
+<div id="sticky-footer-wrapper">
+<div id="popup-inner" class="with-facebook static-content-wrapper">
+	<div id="login-box-header">
+		<h3>Join today and start!</h3>
+	</div>
+
+	<div id="login-box-container" class="clearfix table popup-signup-box" style="width: 710px; height: auto;">
+	<div id="login-fb-wrapper" class="cell" style="padding-left: 40px;">
+		<h3>Signup via Facebook (Recommended) </h3>
+
+		<div class="fb-connect-button-wrapper">
+      <!--
+      <div class="fb-login-button" show-faces="true" width="270" max-rows="1" href="#">Signin via Facebook</div> -->
+      <a class="fb-connect-button" href="#" onClick="javascript:loginFB();">Sign up with Facebook</a>
+		</div>
+	</div>
+
+	<div id="login-form-wrapper" class="cell" style="padding-left: 40px;">
+		<h3>or Email</h3>
+		<form id="login-form" name="login-form" action="javascript:registerMe(this, false);" method="post" class="ud-formajaxify">
+			<input type="hidden" name="isSubmitted" value="1">
+			<div class="form-errors black-tooltip none"></div>
+			<div class="manage-fields-wrapper ">
+        <div class="non-labeled" id="form-item-name">
+          <input id="fullname" name="fullname" type="text" class="text-input" placeholder=" Name">
+        </div>
+				<div class="non-labeled" id="form-item-email">
+					<input id="email" name="email" type="text" class="text-input" placeholder=" E-mail">
+				</div>
+				<div class="non-labeled" id="form-item-password">
+					<input id="passwd" name="passwd" type="password" class="text-input" placeholder=" Password">
+				</div>
+			</div>
+			<div class="submit-row">
+				<input type="submit" value="SignUp" class="btn btn-success" data-loading-text="SignUp">
+				 or <a class="cancel-link ud-popup" data-wrapcss="static-content-wrapper" href=""> Forgot Password </a>
+			</div>
+		</form>
+	</div>
+	</div>
+<div style="padding:15px">
+	Already have an account? 
+	<a class="btn ud-popup" style="display:inline; margin-left: 5px;" href="home.html"><span>Login</span></a>
+</div>
+</div>
+</div>
+</div>
+<a title="Close" class="fancybox-item fancybox-close" href="javascript:;" onClick="registerCloseButtonClicked();"></a>
+
+</div>
+</div>
+</div>
+</div>

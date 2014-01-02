@@ -1,0 +1,5 @@
+@charset "utf-8"
+
+body { color: rgb(51, 51, 51);font: 400 13px/18px 'Open Sans', arial, sans-serif}
+.compact{border-left: 26px transparent solid; border-right: 26px transparent solid; max-width: 928px; margin: 0 auto}
+#header .g-split { border-bottom: 1px solid rgb(232, 232, 232)}

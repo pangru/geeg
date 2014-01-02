@@ -1,0 +1,96 @@
+/* color(BASIC) */
+.sc_bd a {color: #333;}
+.sc_bd a:hover {}
+
+.sc_bd .bline {background-color: #b49791;}
+
+.sc_bd .lco_typ1 {border-color: #B49791; border-style: solid}
+.sc_bd .bg_typ1 {background-color: #FBF7F6;}
+
+.sc_bd .lay_list_selectbox span {color:#666;}
+.sc_bd .lay_list_selectbox select {color: #333; background: transparent; border-style:solid; border-color:#aaa;}
+
+.sc_bd .iicon span {background-color: white;}
+.sc_bd .ipt_text,
+.sc_bd .ipt_sml_text {border-color: #aaa #ddd #ddd #aaa; border-style: solid; color:#333; background:white !important;}
+
+.sc_bd .btngroup {border-color: #B49791;}
+
+.sc_bd .lay_list_general .list_box h2 {background-image: url('images/bul_arrow1.gif');}
+.sc_bd .lay_list_general .list_box .list li {background-image: url('images/bul_line1.gif');}
+
+.sc_bd .notice_table {border-top:1px solid #ccc;}
+
+.sc_bd .listbd {border-color: #dacac7;}
+.sc_bd .listbd .table thead th {background-color: #FBF7F6; background-image: url('images/bul_line2.gif');}
+.sc_bd .listbd .table tbody td,
+.sc_bd .listbd .table .divcon {border-color: #d3d3d3; border-style:solid; color: #444;}
+.sc_bd .listbd .table tbody td .ico_notice span {background-image: url('images/ico_notice.gif');}
+.sc_bd .listbd .table tbody td.nodoc {color: #777;}
+
+.sc_bd .list_cal .cal_nav {background:#FBF7F6; border-style:solid; border-color:#ccc;}
+.sc_bd .list_cal .ge_table td {border-style:solid; border-color:#ccc;}
+.sc_bd .list_cal .ge_table .td_normal {}
+.sc_bd .list_cal .ge_table .td_normal .name {color:#666;}
+.sc_bd .list_cal .ge_table .td_normal .subject {color:#444;}
+
+.sc_bd .list_web .ge_list li {border-color:#ccc; border-style:solid;}
+.sc_bd .list_web .ge_list li .doc_info {border-color:#ddd; border-style:dashed;}
+.sc_bd .list_web .ge_list li .doc_info dt {border-color:#ddd; border-style:solid;}
+.sc_bd .list_web .ge_list li .doc_info dd {color: #666;}
+
+.sc_bd .list_blog .ge_block {border-style:solid; border-color:#ccc;}
+.sc_bd .list_blog .ge_block .subject {color: #333;}
+.sc_bd .list_blog .ge_block .doc_info1,
+.sc_bd .list_blog .ge_block .fbtn {border-style:dashed; border-color:#ddd;}
+.sc_bd .list_blog .ge_block .doc_info1 .bdname {color:#999;}
+.sc_bd .list_blog .ge_block dd {color:#666;}
+.sc_bd .list_blog .ge_block .doc_info2 dt {color:#666;}
+
+.sc_bd .list_gal .ge_table .table {border-bottom:1px solid #ccc;}
+.sc_bd .list_gal .ge_table .table .td_blk .nam a {color:#666;}
+.sc_bd .list_gal .ge_table .table .td_blk .regdate {color:#999;}
+.sc_bd .list_gal .ge_table .table .td_blk .etcc {color:#666;}
+.sc_bd .list_gal .ge_table .table .td_blk .thum .noimg {border-color:#ddd; color:#aaa;}
+.sc_bd .list_gal .ge_table .table .td_blk .thum img {padding:3px;border:1px solid #e6e0df;}
+
+.sc_bd .nodoc {color:#666;}
+
+.sc_bd .detaill .boxx {border-color: #c1c1c1; border-style: solid;}
+.sc_bd .detaill .info_head  {border-color: #c1c1c1; border-style:dashed;}
+.sc_bd .detaill .info_head dt .btitle {background-image: url('images/bul_line1.gif'); color: #666;}
+.sc_bd .detaill .info_head dd {color: #666;}
+.sc_bd .detaill .def_doc {border-color: #B49791; background: #FBF7F6;}
+.sc_bd .detaill .def_doc p {padding:3px 0;}
+.sc_bd .detaill .def_doc img {vertical-align:middle;}
+.sc_bd .detaill .urlAddress a {color:#999;}
+.sc_bd .detaill .urlAddress a.btn {background-image:url('images/btn_urlCopy1.gif');}
+.sc_bd .detaill .com_tit {color: #ff6600; background-image:url('images/ico_red_comment.gif');}
+
+.sc_bd .comm_cnt {color:#ff5113;}
+.sc_bd .comm_list li {border-color:#ddd; border-style:dashed;}
+.sc_bd .comm_list .cn_name {color:#555;}
+.sc_bd .comm_list .cn_date {color:#8e8e8e;}
+.sc_bd .comm_list .cbody {color:#666;}
+.sc_bd .comm_list .btn_grp .pwform {color:#999;}
+.sc_bd .comm_list .btn_grp .cnt {color:#fa943e;}
+.sc_bd .comm_write .txtbox {color:#666;}
+.sc_bd.co_cmt_body {border-style:solid; border-color:#ccc; border-radius:5px; background-color:#fafafa;}
+
+.sc_bd .formm .frm_head {background-image: url('images/bul_arrow2.gif');}
+.sc_bd .formm .table tbody th,
+.sc_bd .formm .table tbody .td {border-style: solid; border-color: #ddd;}
+.sc_bd .formm .table tbody th {background: #FBF7F6;}
+.sc_bd .formm .table tbody .td_editor .efiles dt select {border-style:solid; border-color:#ccc;}
+.sc_bd .formm .snsgrp label span {background-color:white;}
+
+.sc_bd .paginate a,
+.sc_bd .paginate strong {color:#333;}
+.sc_bd .paginate a:hover,
+.sc_bd .paginate a:active,
+.sc_bd .paginate a:focus {background-color:#f8f8f8}
+.sc_bd .paginate strong {color:#f60;}
+.sc_bd .paginate .direction {color:#767676;}
+.sc_bd .paginate .direction:hover,
+.sc_bd .paginate .direction:active,
+.sc_bd .paginate .direction:focus{background-color:#fff;color:#333}

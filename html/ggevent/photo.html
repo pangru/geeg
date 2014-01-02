@@ -1,0 +1,156 @@
+<script type="text/javascript">
+  (function () {
+      if (!window.user || !window.user.isLogin) {
+        console.log("#notice_write_btn " + $("#notice_write_btn").html());
+        $("#notice_write_btn").remove();
+      }
+  }());
+</script>
+<style type="text/css">
+#push {
+	height: 43px; /* .push must be the same height as .footer */
+    padding-top:10px;
+}
+#wrapper{
+    width:735px;
+    min-height: 96%;
+	height: auto !important;
+	height: 96%;
+	text-align:left;
+    margin: 0 auto -30px;
+    padding:0 10px 0px 10px;
+}
+
+.clearfix{
+	clear:both;
+	float:none;
+}
+#bigPic{
+	width:735px;
+	height:350px;
+	padding:1px;
+	border:1px solid #CCC;
+	background-color:#f6eeee;
+	margin-bottom: 10px;	
+}
+#bigPic img{
+	position:absolute;
+	display:none;
+	max-width:735px; 
+	width: expression(this.width > 735 ? 735: true); 	
+	max-height:350px; 
+	height: expression(this.height > 350 ? 350: true);
+	margin : expression(this.height > 350 ? 350:(350-this.height)/2)) expression(this.height > 350 ? 350:(350-this.height)/2)) 
+	         expression(this.width > 735 ? 735: (735-this.width)/2) expression(this.width > 735 ? 735: (735-this.width)/2);
+}
+ul#thumbs li.active{
+	border:2px solid #000;	
+	background:#fff;
+	padding:2px;
+}
+ul#thumbs, ul#thumbs li{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+	
+ul#thumbs li{
+	float:left;
+	margin-right:7px;
+	margin-bottom:5px;
+	border:1px solid #CCC;	
+	padding:3px;
+	cursor:pointer;
+}
+ul#thumbs img{
+	float:left;
+	width:80px;
+	height:80px;
+	line-height:80px;
+	overflow:hidden;
+	position:relative;
+	z-index:1;		
+}
+
+</style>
+<script type="text/javascript" src="http://www.nitinh.com/static/jquery-1.4.1.js"></script>
+    <img src="../images/m_navi_05_s03_title.png"/>
+    <!-- // Notice -->
+    <div class="sc_bd">
+    <div id='wrapper'>
+		<div id='body'>
+			<div id="bigPic">
+				<img src="../album/photo/OG1A7769.png" style="text-align:center"/>
+				<img src="../album/photo/OG1A7788.png" />
+				<img src="../album/photo/OG1A7789.png" />
+				<img src="../album/photo/OG1A7867.png" />
+				<img src="../album/photo/OG1A7868.png" />
+				<img src="../album/photo/OG1A7893.png" />
+				<img src="../album/photo/OG1A7896.png" />
+				<img src="../album/photo/OG1A7901.png" />
+				<img src="../album/photo/OG1A7952.png" />
+			</div>
+			
+			
+			<ul id="thumbs">
+				<li class='active' rel='1'><img src="../album/photo/OG1A7769.png" alt="" /></li>
+				<li rel='2'><img src="../album/photo/OG1A7788.png" alt="" /></li>
+				<li rel='3'><img src="../album/photo/OG1A7789.png" alt="" /></li>
+				<li rel='4'><img src="../album/photo/OG1A7867.png" alt="" /></li>
+				<li rel='5'><img src="../album/photo/OG1A7868.png" alt="" /></li>
+				<li rel='6'><img src="../album/photo/OG1A7893.png" alt="" /></li>
+				<li rel='7'><img src="../album/photo/OG1A7896.png" alt="" /></li>
+				<li rel='8'><img src="../album/photo/OG1A7901.png" alt="" /></li>
+				<li rel='9'><img src="../album/photo/OG1A7952.png" alt="" /></li>
+			</ul>
+		
+		</div>
+		<div class='clearfix'></div>
+		<div id='push'></div>
+	</div>
+
+	<script type="text/javascript">
+	var currentImage;
+    var currentIndex = -1;
+    var interval;
+    function showImage(index){
+        if(index < $('#bigPic img').length){
+        	var indexImage = $('#bigPic img')[index]
+            if(currentImage){   
+            	if(currentImage != indexImage ){
+                    $(currentImage).css('z-index',2);
+                    clearTimeout(myTimer);
+                    $(currentImage).fadeOut(250, function() {
+					    myTimer = setTimeout("showNext()", 3000);
+					    $(this).css({'display':'none','z-index':1})
+					});
+                }
+            }
+            $(indexImage).css({'display':'block', 'opacity':1});
+            currentImage = indexImage;
+            currentIndex = index;
+            $('#thumbs li').removeClass('active');
+            $($('#thumbs li')[index]).addClass('active');
+        }
+    }
+    
+    function showNext(){
+        var len = $('#bigPic img').length;
+        var next = currentIndex < (len-1) ? currentIndex + 1 : 0;
+        showImage(next);
+    }
+    
+    var myTimer;
+    
+    $(document).ready(function() {
+	    myTimer = setTimeout("showNext()", 3000);
+		showNext(); //loads first image
+        $('#thumbs li').bind('click',function(e){
+        	var count = $(this).attr('rel');
+        	showImage(parseInt(count)-1);
+        });
+	});
+    
+	
+	</script>	
+    </div>
