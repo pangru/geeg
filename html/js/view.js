@@ -104,7 +104,6 @@ var registerMe = function (_form, _isSNS) {
 		params = _form;
 	}
 
-console.log(params	);
 	runAjax(view.user.post.register, 'post', params, 
 		function (data) {
 			registerCloseButtonClicked();

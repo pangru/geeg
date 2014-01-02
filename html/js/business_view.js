@@ -203,6 +203,7 @@ var showCalenderHtml = function () {
 	showNavigation(view.ggevent.navigation, 'sub_menu_03_m5s2');
 	runAjax(view.ggevent.calender.list_html, 'get', null, 
 		function (data) {
+			removeMainBanner();
 			$("#sideRight").html(data);
 		} 
 	);	
@@ -212,6 +213,7 @@ var showPhotoHtml = function () {
 	showNavigation(view.ggevent.navigation, 'sub_menu_04_m5s3');
 	runAjax(view.ggevent.photo.list_html, 'get', null, 
 		function (data) {
+			removeMainBanner();
 			$("#sideRight").html(data);
 		} 
 	);
@@ -222,6 +224,7 @@ var showVideoHtml = function () {
 	showNavigation(view.ggevent.navigation, 'sub_menu_05_m5s4');
 	runAjax(view.ggevent.video.list_html, 'get', null, 
 		function (data) {
+			removeMainBanner();
 			$("#sideRight").html(data);
 		} 
 	);	
@@ -272,4 +275,3 @@ var showFoodHtml = function () {
 		}
 	);
 };
-
