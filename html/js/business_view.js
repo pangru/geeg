@@ -157,18 +157,21 @@ var getNoticeData = function () {
 }
 
 var getRecentlyNoticeData = function (count) {
-	var params = 'count=' + count;
+	var params = { count: count};
 	runAjax(view.ggevent.notice.list_data, 'get', params,
 		function (data) {
 			var _html = "";
 			for (var i=0; i< data.length; i++) {
-				_html = _html + "<tr><td>" + (i+ 1) + "</td><td class='subject'>";
+				_html = _html + "<tr height='20'><td class='subject'>";
 				_html = _html + "<a href='#'>" + data[i].title + "</a></td>";
-				_html = _html + "<td>" + data[i].name + "</td><td>" + data[i].create_date + "</td>"
-				_html = _html + "<td>" + data[i].read_cnt + "</td></tr>";
+				_html = _html + "<td class='date'>" + data[i].create_date + "</td></tr>";
 			}
 
-			$("#notice_content").html(_html);
+			if (data.length == 0) {
+				_html = "게시글이 없습니다 ";
+			}
+
+			$("#tab_board").html(_html);
 		}
 	);
 }
@@ -208,6 +211,26 @@ var showCalenderHtml = function () {
 		} 
 	);	
 };
+
+var getRecentlyCalendarData = function (count) {
+	var params = 'count=' + count;
+	runAjax(view.ggevent.calender.list_data, 'get', params,
+		function (data) {
+			var _html = "";
+			for (var i=0; i< data.length; i++) {
+				_html = _html + "<tr height='20'><td class='subject'>";
+				_html = _html + "<a href='#'>" + data[i].title + "</a></td>";
+				_html = _html + "<td class='date'>" + data[i].create_date + "</td></tr>";
+			}
+
+			if (data.length == 0) {
+				_html = "게시글이 없습니다 ";
+			}
+
+			$("#tab_board").html(_html);
+		}
+	);
+}
 
 var showPhotoHtml = function () {
 	showNavigation(view.ggevent.navigation, 'sub_menu_04_m5s3');

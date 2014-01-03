@@ -62,9 +62,9 @@ console.log(info);
 });
 
 app.get('/notice', function (req, res) {
-console.log('get  /notice', req.params.count);
+console.log('get  /notice', req.query.count);
 
-  db.notice(function (err, data) {
+  db.notice(req.query.count, function (err, data) {
     console.log('notice ' + data.length);
     res.send(data);
   });
@@ -84,6 +84,13 @@ app.post('/notice', function (req, res) {
     if (!err) {
       res.send();
     }
+  });
+});
+
+app.get('/calender', function (req, res) {
+  db.calendar(req.query.count, function (err, data){
+    console.log('event calendar ', data.length);
+    res.send(data);
   });
 });
 
