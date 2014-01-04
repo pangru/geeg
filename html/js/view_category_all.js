@@ -27,7 +27,7 @@ var view = {
 	},
 	market: {
 		navigation: '/ggmarket/ggmarket_navigation.html',
-		maket_html: '/market_contact.htm'
+		maket_html: '/ggmarket/market_contact.htm'
 	},
 	ggmap: {
 		navigation: '/ggmap/ggmap_navigation.html',
@@ -41,6 +41,7 @@ var view = {
 		notice: {
 			list_html: '/ggevent/notice.html',
 			write_html: '/ggevent/notice_write.html',
+			read_html: '/ggevent/notice_read.html',
 			list_data: '/notice',
 			post: {
 				write: '/notice'

@@ -145,10 +145,11 @@ a { color:#404040; text-decoration:none; }
 }
 .content .sub_menu_con .sub_menu li:first-child { padding:0 15px 0 0; background:none; }
 .content .sub_menu_con .sub_menu li a { color:#958882; font-size:.7em; font-family:dotum; }
-.content .con_top { position:absolute; left:0; top:110px; width:960px; height:60px; }
-.content .con_top .sub_navi { position:absolute; left:0; top:40px; color:#b49993; font-size:.7em; }
-.content .con_top .sub_navi strong { color:#725f5b; }
-.content .con_top .line { position:absolute; left:0; bottom:0; width:960px; height:1px; background-color:#e2d4c6; }
+
+.content .con_top { position:relative; width:100%; height:20px; }
+.content .con_top .sub_navi { position:relative; float: right; color:#725f5b; font-size: 11px; }
+.content .con_top .sub_navi strong { color:#F92666; }
+
 .content .c_center { text-align:center; }
 .content .c_title{ padding:20px 0; text-align:center; }
 .content .c_btns { padding:50px 0 20px 0; text-align:center; }

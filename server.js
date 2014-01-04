@@ -63,8 +63,12 @@ console.log(info);
 
 app.get('/notice', function (req, res) {
 console.log('get  /notice', req.query.count);
+  var params = {
+    nid: req.query.nid, 
+    count: req.query.count
+  }
 
-  db.notice(req.query.count, function (err, data) {
+  db.notice(params, function (err, data) {
     console.log('notice ' + data.length);
     res.send(data);
   });
