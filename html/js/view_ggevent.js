@@ -99,3 +99,57 @@ var writeNotice = function (_form) {
 		}
 	);
 }
+
+/**
+ * Business Introduce Floor
+ */
+var showCalenderHtml = function () {
+	showNavigation(view.ggevent.navigation, 'sub_menu_03_m5s2');
+	runAjax(view.ggevent.calender.list_html, 'get', null, 
+		function (data) {
+			removeMainBanner();
+			$("#sideRight").html(data);
+		} 
+	);	
+};
+
+var getRecentlyCalendarData = function (count) {
+	var params = 'count=' + count;
+	runAjax(view.ggevent.calender.list_data, 'get', params,
+		function (data) {
+			var _html = "";
+			for (var i=0; i< data.length; i++) {
+				_html = _html + "<tr height='20'><td class='subject'>";
+				_html = _html + "<a href='#' onClick='getNo'>" + data[i].title + "</a></td>";
+				_html = _html + "<td class='date'>" + data[i].create_date + "</td></tr>";
+			}
+
+			if (data.length == 0) {
+				_html = "게시글이 없습니다 ";
+			}
+
+			$("#tab_board").html(_html);
+		}
+	);
+}
+
+var showPhotoHtml = function () {
+	showNavigation(view.ggevent.navigation, 'sub_menu_04_m5s3');
+	runAjax(view.ggevent.photo.list_html, 'get', null, 
+		function (data) {
+			removeMainBanner();
+			$("#sideRight").html(data);
+		} 
+	);
+	
+};
+
+var showVideoHtml = function () {
+	showNavigation(view.ggevent.navigation, 'sub_menu_05_m5s4');
+	runAjax(view.ggevent.video.list_html, 'get', null, 
+		function (data) {
+			removeMainBanner();
+			$("#sideRight").html(data);
+		} 
+	);	
+};

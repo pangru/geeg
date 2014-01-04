@@ -32,7 +32,7 @@ var view = {
 	ggmap: {
 		navigation: '/ggmap/ggmap_navigation.html',
 		market_html: '/map_store.htm',
-		recomm_html: '/map_cultural.htm',
+		recomm_html: '/div_map_cultural.html',
 		hotel_html: '/hotel.htm',
 		rest_html: '/rest.htm'
 	},
