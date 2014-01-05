@@ -14,7 +14,7 @@ window.fbAsyncInit = function () {
 		} else if (response.status === 'not_authorized') {
 			loginFB();
 		} else {
-			FB.login(function (response) { console.log('fb login');}, {scope: 'email'});
+			FB.login(function (response) { }, {scope: 'email'});
 		}
 	});
 
@@ -41,8 +41,6 @@ window.fbAsyncInit = function () {
 };
 
 var loginFB = function () {
-	console.log('loginFB');
-
 	if (facebookLoginChk == 0) {
 		FB.login(function (response) {			
 			if (response.authResponse) {

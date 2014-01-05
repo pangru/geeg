@@ -58,11 +58,9 @@ var getNoticeReadHtml = function (nid) {
 };
 
 var getNoticeReadData = function (nid) {
-console.log('getNoticeReadData nid', nid);
 	var params = { nid: nid};
 	runAjax(view.ggevent.notice.get.read, 'get', params,
 		function (data) {
-console.log(' getNoticeReadData data.length =', data[0].body);
 			$("#notice_title").html(data[0].title);
 			$("#notice_body").html(data[0].body);
 		}

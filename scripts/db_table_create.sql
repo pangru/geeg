@@ -31,4 +31,3 @@ CREATE TABLE `user` (
   `is_sns` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
