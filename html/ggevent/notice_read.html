@@ -1,22 +1,34 @@
-<div class="detail">
-	<p class="bline"></p>
-	<div class="boxx">
-		<!-- 상단정보 -->
-		<dl class="info_head clr">
-			<dt>
-				<span class="btitle">공지사항</span>
-				<strong class="sbj2">공지사항 입니다.공지사항 입니다.</strong>
-			</dt>
-			<dd>2013-04-17 17:25:34</dd>
-		</dl>
-	</div>
-	<div class="conpad">
-		<div class="snsbtn"></div>
-
-		<!-- 게시판 주소 -->
-		<div class="urlAddress">
-			<a href="http://ujubyul.1step.co.kr/bbs/96" target="_blank">http://ujubyul.1step.co.kr/bbs/96</a>
-			<a href="javascript:clip('http://ujubyul.1step.co.kr/bbs/96')" class="btn" title="URL COPY"></a>
-		</div>
-	</div>
-</div>
+<!-- // Notice -->
+    <div class="listbd">
+        <div class="formm">
+        <p class="bline"></p>
+    	<div class="frm_head lco_typ1 bg_typ1"><strong>공지사항</strong></div>
+          <table class="table" summary="게시물 form">
+            <colgroup>
+              <col width="120">
+              <col>
+            </colgroup>
+            <tbody id="notice_content">
+				<tr>
+				<th scope="row">제목</th>
+                <td class="td" style="text-align: left;">
+                	<div id="notice_title"></div>
+				</td>
+              </tr>
+              <tr>
+                <td class="td" colspan="2" style="padding: 0px; padding-top: 5px;">
+                	<div id="notice_body"></div>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td class="td" colspan="2">
+                  <a href="javascript:writeNotice(this)" class="scbtn"><span><img src="images/btn_write001.jpg"></span></a>
+                  <a href="javascript:noticeEditorUpdate();" class="scbtn"><span><img src="images/btn_cancel001.jpg"></span></a>
+				</td>
+              </tr>
+            </tfoot>            
+          </table>
+        </div>
+    </div>

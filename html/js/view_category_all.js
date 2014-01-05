@@ -42,9 +42,12 @@ var view = {
 			list_html: '/ggevent/notice.html',
 			write_html: '/ggevent/notice_write.html',
 			read_html: '/ggevent/notice_read.html',
-			list_data: '/notice',
+			list_data: '/notice/list',
 			post: {
 				write: '/notice'
+			},
+			get: {
+				read: '/notice/get'
 			}
 		},
 		calender : {

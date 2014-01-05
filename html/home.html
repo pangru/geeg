@@ -36,6 +36,8 @@
 
     $(document).ready(function () {
       getRecentlyNoticeData(5);
+      showCurrentEventCalendar();
+
       $(".btn_more > a").click(showNoticeHtml);
 
       $(".tab p.on").hide();
@@ -227,8 +229,7 @@
               </table>
             </div>
           </div>
-          <div class="event_info">
-          </div>
+          <div class="event_info"><div id="event_info_detail" class="detail"></div></div>
           <div class="photo_info"></div>
           <div class="video_info"></div>
         </div>  

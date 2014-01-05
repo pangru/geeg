@@ -111,8 +111,9 @@ a { color:#404040; text-decoration:none; }
 .main_con .notice .subject a { color:#7f7f7f; }
 .main_con .notice .date { color:#afaeae; text-align:right; }
 .main_con #notice2 { display:none; }
-.main_con .event_info {
-	position:absolute; left:683px; width:278px; height:240px; background:url(../images/info.png) left top no-repeat;}
+
+.main_con .event_info { position:absolute; left:683px; width:278px; height:155px; background:url(../images/info.png) left top no-repeat;}
+.main_con .event_info .detail { width:278px; height:125px; padding-top: 30px;}
 
 .main_con .photo_info {
 	position:absolute; left:210px; top:165px; width:450px; height:134px; background:url(../images/photo.png) left top no-repeat; }

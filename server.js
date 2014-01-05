@@ -61,8 +61,8 @@ console.log(info);
   });
 });
 
-app.get('/notice', function (req, res) {
-console.log('get  /notice', req.query.count);
+app.get('/notice/list', function (req, res) {
+console.log('/notice/list', req.query.count);
   var params = {
     nid: req.query.nid, 
     count: req.query.count
@@ -71,6 +71,21 @@ console.log('get  /notice', req.query.count);
   db.notice(params, function (err, data) {
     console.log('notice ' + data.length);
     res.send(data);
+  });
+});
+
+app.get('/notice/get', function (req, res) {
+console.log('/notice/get', req.query.count);
+  var params = {
+    nid: req.query.nid, 
+    count: req.query.count
+  }
+
+  db.notice(params, function (err, data) {
+    console.log('notice ' + data.length);
+console.log((new Buffer(blob)).toString('base64'));
+    data[0].body = (new Buffer(blob)).toString('base64');
+    res.send(data[0]);
   });
 });
 

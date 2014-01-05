@@ -17,6 +17,7 @@ CREATE TABLE `event` (
   `poster` varchar(45) DEFAULT NULL,
   `banner` varchar(45) DEFAULT NULL,
   `create_date` datetime NOT NULL,
+  `read_cnt` int(11) NOT NULL DEFAULT '0',
   `writer_email` varchar(45) NOT NULL,
   PRIMARY KEY (`eid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
