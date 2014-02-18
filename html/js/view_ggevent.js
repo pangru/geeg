@@ -68,6 +68,7 @@ var getNoticeReadData = function (nid) {
 };
 
 var showNoticeWriteHtml = function () {
+console.log('showNoticeWriteHtml');
 	runAjax(view.ggevent.notice.write_html, 'get', null, 
 		function (data) {
 			$(".bd_body").html(data);

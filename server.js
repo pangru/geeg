@@ -113,6 +113,10 @@ app.get('/calender', function (req, res) {
   });
 });
 
+app.post('/upload', function (req, res) {
+   console.log('/upload', req);
+});
+
 (function() { 
   app.listen(port);
   console.log("listening %s", port);
