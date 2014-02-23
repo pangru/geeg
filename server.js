@@ -3,6 +3,7 @@ var express = require("express");
 var querystring = require("querystring");
 
 var db = require('./lib/dbconn');
+var mongoconn = require('./lib/mongoconn');
 
 var app = express();
 var port = 80;
@@ -11,8 +12,9 @@ var html_path = __dirname + '/html';
 app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.cookieParser());
-app.use(express.bodyParser());
+app.use(express.bodyParser({uploadDir: __dirname + '/upload'}));
 app.use(express.methodOverride());
+app.use(express.urlencoded());
 //app.use(express.session());
 app.use(app.router);
 app.use(express.static(__dirname + '/html'));
@@ -114,12 +116,24 @@ app.get('/calender', function (req, res) {
 });
 
 app.post('/upload', function (req, res) {
-   console.log('/upload', req);
+   var file = req.files.attach_file;
+   var filename = file.name;
+   var type = file.type;
+   var path = file.path;
+    
+   console.log('/upload', file); 
+   mongoconn.insert(filename, type, path, function (err) {
+     if (err) {
+       console.log("mongoconn.insert()", err);
+       res.send(500);
+     } else {
+       res.send(200);
+     }  
+   });  
 });
 
 (function() { 
   app.listen(port);
-  console.log("listening %s", port);
-
+  console.log("listening ", port);
   db.open();
 })();

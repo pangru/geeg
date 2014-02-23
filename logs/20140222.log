@@ -1,0 +1,145 @@
+listening  80
+... evn { LC_PAPER: 'ko_KR.UTF-8',
+  LC_ADDRESS: 'ko_KR.UTF-8',
+  LC_MONETARY: 'ko_KR.UTF-8',
+  TERM: 'screen',
+  LC_NUMERIC: 'ko_KR.UTF-8',
+  LC_TELEPHONE: 'ko_KR.UTF-8',
+  LS_COLORS: 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
+  PATH: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+  LC_IDENTIFICATION: 'ko_KR.UTF-8',
+  LANG: 'en_US.UTF-8',
+  LC_MEASUREMENT: 'ko_KR.UTF-8',
+  HOME: '/home/jinsa2010',
+  LC_TIME: 'ko_KR.UTF-8',
+  LC_NAME: 'ko_KR.UTF-8',
+  SHELL: '/bin/bash',
+  LOGNAME: 'root',
+  USER: 'root',
+  USERNAME: 'root',
+  MAIL: '/var/mail/root',
+  SUDO_COMMAND: '/usr/local/bin/node server.js',
+  SUDO_USER: 'jinsa2010',
+  SUDO_UID: '1000',
+  SUDO_GID: '1000' }
+mongoconn  { init: [Function], insert: [Function] }
+open undefined
+/upload { fieldName: 'attach_file',
+  originalFilename: '��ũ���� 2014-02-22 ���� 8.22.50.png',
+  path: '/home/jinsa2010/Development/workspace/geeg/upload/13226-1m0msby.png',
+  headers: 
+   { 'content-disposition': 'form-data; name="attach_file"; filename="��ũ���� 2014-02-22 ���� 8.22.50.png"',
+     'content-type': 'image/png' },
+  ws: 
+   { _writableState: 
+      { highWaterMark: 16384,
+        objectMode: false,
+        needDrain: false,
+        ending: true,
+        ended: true,
+        finished: true,
+        decodeStrings: true,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        sync: false,
+        bufferProcessing: false,
+        onwrite: [Function],
+        writecb: null,
+        writelen: 0,
+        buffer: [] },
+     writable: true,
+     domain: null,
+     _events: { error: [Object], close: [Object] },
+     _maxListeners: 10,
+     path: '/home/jinsa2010/Development/workspace/geeg/upload/13226-1m0msby.png',
+     fd: null,
+     flags: 'w',
+     mode: 438,
+     start: undefined,
+     pos: undefined,
+     bytesWritten: 125761,
+     closed: true,
+     open: [Function],
+     _write: [Function],
+     destroy: [Function],
+     close: [Function],
+     destroySoon: [Function],
+     pipe: [Function],
+     write: [Function],
+     end: [Function],
+     setMaxListeners: [Function],
+     emit: [Function],
+     addListener: [Function],
+     on: [Function],
+     once: [Function],
+     removeListener: [Function],
+     removeAllListeners: [Function],
+     listeners: [Function] },
+  size: 125761,
+  name: '��ũ���� 2014-02-22 ���� 8.22.50.png',
+  type: 'image/png' }
+init()
+Finished writing file to Mongo
+[90mPOST /upload [33m400 [90m46006ms - 493b[0m
+[90mHEAD / [32m200 [90m2ms - 11.56kb[0m
+{ [Error: Connection lost: The server closed the connection.] fatal: true, code: 'PROTOCOL_CONNECTION_LOST' }
+{ [Error: Connection lost: The server closed the connection.] fatal: true, code: 'PROTOCOL_CONNECTION_LOST' }
+[90mGET /phpTest/zologize/axa.php [33m404 [90m3ms[0m
+[90mGET /phpMyAdmin/scripts/setup.php [33m404 [90m1ms[0m
+[90mGET /pma/scripts/setup.php [33m404 [90m1ms[0m
+[90mGET /myadmin/scripts/setup.php [33m404 [90m2ms[0m
+[90mGET /phpTest/zologize/axa.php [33m404 [90m1ms[0m
+[90mGET /phpMyAdmin/scripts/setup.php [33m404 [90m1ms[0m
+[90mGET /pma/scripts/setup.php [33m404 [90m1ms[0m
+[90mGET /myadmin/scripts/setup.php [33m404 [90m1ms[0m
+[90mGET /phpTest/zologize/axa.php [33m404 [90m17ms[0m
+[90mGET /phpMyAdmin/scripts/setup.php [33m404 [90m1ms[0m
+[90mGET /pma/scripts/setup.php [33m404 [90m1ms[0m
+[90mGET /myadmin/scripts/setup.php [33m404 [90m2ms[0m
+[90mGET /w00tw00t.at.ISC.SANS.DFind:) [33m404 [90m1ms[0m
+[90mGET /phpTest/zologize/axa.php [33m404 [90m1ms[0m
+[90mGET /phpMyAdmin/scripts/setup.php [33m404 [90m2ms[0m
+[90mGET /pma/scripts/setup.php [33m404 [90m1ms[0m
+[90mGET /myadmin/scripts/setup.php [33m404 [90m1ms[0m
+[90mGET /HNAP1/ [33m404 [90m2ms[0m
+[90mGET /HNAP1/ [33m404 [90m1ms[0m
+[90mGET /phpTest/zologize/axa.php [33m404 [90m1ms[0m
+[90mGET /phpMyAdmin/scripts/setup.php [33m404 [90m3ms[0m
+[90mGET /pma/scripts/setup.php [33m404 [90m3ms[0m
+[90mGET /myadmin/scripts/setup.php [33m404 [90m2ms[0m
+[90mGET /cgi-bin/rtpd.cgi?/bin/busybox [33m404 [90m2ms[0m
+{ [Error: Connection lost: The server closed the connection.] fatal: true, code: 'PROTOCOL_CONNECTION_LOST' }
+{ [Error: Connection lost: The server closed the connection.] fatal: true, code: 'PROTOCOL_CONNECTION_LOST' }
+[90mGET /phpTest/zologize/axa.php [33m404 [90m1ms[0m
+[90mGET /phpMyAdmin/scripts/setup.php [33m404 [90m1ms[0m
+[90mGET /pma/scripts/setup.php [33m404 [90m1ms[0m
+[90mGET /myadmin/scripts/setup.php [33m404 [90m1ms[0m
+[90mHEAD / [32m200 [90m1ms - 11.56kb[0m
+[90mGET /phpTest/zologize/axa.php [33m404 [90m1ms[0m
+[90mGET /phpMyAdmin/scripts/setup.php [33m404 [90m1ms[0m
+[90mGET /pma/scripts/setup.php [33m404 [90m3ms[0m
+[90mGET /myadmin/scripts/setup.php [33m404 [90m2ms[0m
+[90mGET /phpTest/zologize/axa.php [33m404 [90m1ms[0m
+[90mGET /phpMyAdmin/scripts/setup.php [33m404 [90m1ms[0m
+[90mGET /pma/scripts/setup.php [33m404 [90m1ms[0m
+[90mGET /myadmin/scripts/setup.php [33m404 [90m3ms[0m
+[90mGET /phpTest/zologize/axa.php [33m404 [90m1ms[0m
+[90mGET /phpMyAdmin/scripts/setup.php [33m404 [90m0ms[0m
+[90mGET /pma/scripts/setup.php [33m404 [90m1ms[0m
+[90mGET /myadmin/scripts/setup.php [33m404 [90m1ms[0m
+[90mGET /phpTest/zologize/axa.php [33m404 [90m1ms[0m
+[90mGET /phpMyAdmin/scripts/setup.php [33m404 [90m1ms[0m
+[90mGET /pma/scripts/setup.php [33m404 [90m2ms[0m
+[90mGET /myadmin/scripts/setup.php [33m404 [90m4ms[0m
+[90mGET /phpTest/zologize/axa.php [33m404 [90m1ms[0m
+[90mGET /phpMyAdmin/scripts/setup.php [33m404 [90m1ms[0m
+[90mGET /pma/scripts/setup.php [33m404 [90m2ms[0m
+[90mGET /myadmin/scripts/setup.php [33m404 [90m1ms[0m
+[90mGET /phpTest/zologize/axa.php [33m404 [90m1ms[0m
+[90mGET /phpMyAdmin/scripts/setup.php [33m404 [90m1ms[0m
+[90mGET /pma/scripts/setup.php [33m404 [90m1ms[0m
+[90mGET /myadmin/scripts/setup.php [33m404 [90m1ms[0m
+{ [Error: Connection lost: The server closed the connection.] fatal: true, code: 'PROTOCOL_CONNECTION_LOST' }
+{ [Error: Connection lost: The server closed the connection.] fatal: true, code: 'PROTOCOL_CONNECTION_LOST' }
+[90mGET / [32m200 [90m2ms - 11.56kb[0m
