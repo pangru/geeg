@@ -22,7 +22,7 @@ var exit = function () {
 };
 
 app.configure(function () {
-	app.use(favicon(''));
+	app.use(favicon('./public/images/favicon.ico'));
 
 });
 
