@@ -3,8 +3,8 @@
  */
 var _ = require('./node_modules/underscore');
 var async = require('./node_modules/async');
-var console = require('./node_modules/console-plus');
 var config = require('konphyg')(__dirname + '/config');
+var mdconf = require('./node_modules/mdconf');
 
 var express = require('./node_modules/express');
 var app = express();
@@ -21,9 +21,24 @@ var exit = function () {
 	process.exit();
 };
 
+// Express configurations
 app.configure(function () {
-	app.use(favicon('./public/images/favicon.ico'));
-
+//	app.use(favicon('./public/images/favicon.ico'));
+  app.use(express.static(__dirname + '/public'));
+  app.use(express.logger({ buffer: 5000 }));
+  app.use(express.bodyParser());
+  app.use(express.methodOOverride());
+  app.use(function (req, res, next) {
+    var _send = res.send;
+    res.send = function () {
+      if (arguments.length === 1 && _.isFinite(arguments[0]))
+        _send.call(res, arguments[0], '');
+      else
+        _send.apply(res, arguments);
+    };
+    next();
+  });
+  app.use(app.router);
 });
 
 // server start!!
